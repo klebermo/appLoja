@@ -1,0 +1,24 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+  <display-name>appLoja</display-name>
+
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>servlet.core.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>adminServlet</servlet-name>
+    <servlet-class>servlet.core.AdminServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>adminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+</web-app>
