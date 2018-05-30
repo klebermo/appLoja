@@ -4,14 +4,14 @@ import java.util.List;
 import java.util.ArrayList;
 
 public abstract class Dao<E> {
-  private E entityClass;
+  private Class<E> entityClass;
 
-  public E getEntityClass() {
-    return entityClass;
+  public Dao(Class<E> entityClass) {
+    this.entityClass = entityClass;
   }
 
-  public void setEntityClass(E entityClass) {
-    this.entityClass = entityClass;
+  public Class<E> getEntityClass() {
+    return entityClass;
   }
 
   public void insert(E object) {
